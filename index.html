@@ -135,10 +135,10 @@
           <div class="col-lg-6 text-lg-end">
             <p>
               <a
-                href="#"
+                href="property-single.html"
                 target="_blank"
                 class="btn btn-primary text-white py-3 px-4"
-                >View all properties</a
+                >View all details</a
               >
             </p>
           </div>
@@ -162,11 +162,7 @@
 
                       
 
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      
                     </div>
                   </div>
                 </div>
@@ -185,11 +181,11 @@
                       >
                       <span class="city d-block mb-3">Nigeria</span>
 
-                      <a
+                      <!-- <a
                         href="property-single.html"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -208,11 +204,11 @@
                       >
                       <span class="city d-block mb-3">Nigeria</span>
 
-                      <a
+                      <!-- <a
                         href="property-single.html"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -231,11 +227,11 @@
                       >
                       <span class="city d-block mb-3">Nigeria</span>
 
-                      <a
+                      <!-- <a
                         href="property-single.html"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -254,11 +250,11 @@
                       >
                       <span class="city d-block mb-3">Nigeria</span>
 
-                      <a
+                      <!-- <a
                         href="property-single.html"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -277,11 +273,11 @@
                       >
                       <span class="city d-block mb-3">Nigeria</span>
 
-                      <a
+                      <!-- <a
                         href="property-single.html"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -300,11 +296,11 @@
                       >
                       <span class="city d-block mb-3">Nigeria</span>
 
-                      <a
+                      <!-- <a
                         href="property-single.html"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -323,11 +319,11 @@
                       >
                       <span class="city d-block mb-3">Nigeria</span>
 
-                      <a
+                      <!-- <a
                         href="property-single.html"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -346,11 +342,11 @@
                       >
                       <span class="city d-block mb-3">Nigeria</span>
 
-                      <a
+                      <!-- <a
                         href="property-single.html"
                         class="btn btn-primary py-2 px-3"
                         >See details</a
-                      >
+                      > -->
                     </div>
                   </div>
                 </div>
@@ -378,7 +374,20 @@
                   >Next</span
                 >
               </div>
+
+              
+              
             </div>
+
+            <!-- <div class="see-details">
+
+              <a
+                href="property-single.html"
+                class="btn btn-primary py-2 px-3"
+                >See all details</a>
+
+            </div> -->
+
           </div>
         </div>
       </div>
@@ -676,9 +685,12 @@
 
     <div class="section realtor">
 
+      <div class="dk" id="dark"></div>
+
       <!-- FORM POP UP STARTS HERE -->
       <div class="form1" id="formA">
-        <form id="form" > 
+        <form id="form" >
+          <h6 class="close" id="closex">x</h6> 
 
           <h2>Sign Up</h2>
           <input type="text" name="" id="name" placeholder="Full Name">
@@ -961,7 +973,7 @@
               <ul class="list-unstyled float-start links">
                 <li><a href="about.html">About us</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="#faqs">Faq</a></li>
+                <!-- <li><a href="#faqs">Faq</a></li> -->
               </ul>
               <!-- <ul class="list-unstyled float-start links">
                 <li><a href="#">Partners</a></li>
@@ -979,9 +991,9 @@
             <div class="widget">
               <h3>Links</h3>
               <ul class="list-unstyled links">
-                <li><a href="#">Our Vision</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
+                <!-- <li><a href="#">Our Vision</a></li> -->
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
               </ul>
 
               <ul class="list-unstyled social">
@@ -1066,10 +1078,18 @@
       let age = document.getElementById("age");
       let address = document.getElementById("address");
       let reason = document.getElementById("reason");
+      let dark = document.getElementById('dark');
+      let closex = document.getElementById('closex');
 
 
       open.addEventListener("click", function(){
           formA.style.display = 'block';
+          dark.style.display = 'block';
+      })
+
+      closex.addEventListener("click", function(){
+          formA.style.display = 'none';
+          dark.style.display = 'none';
       })
 
       okay.addEventListener("click", function(){
